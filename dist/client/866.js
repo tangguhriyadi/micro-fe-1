@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapp1=self.webpackChunkapp1||[]).push([[866],{866:(e,n,t)=>{t.r(n);var l=t(416),a=t.n(l),p=t(51);const c=()=>a().createElement("div",null,"Content2"),r=()=>a().createElement(c,null);t.n(p)().render(a().createElement(r,null),document.getElementById("app"))}}]);

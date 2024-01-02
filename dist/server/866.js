@@ -1,1 +1,0 @@
-"use strict";exports.id=866,exports.ids=[866],exports.modules={866:function(e,t,n){n.r(t);var l=n(416),r=n.n(l),o=n(51),s=()=>r().createElement("div",null,"Content2");const c=()=>r().createElement(s,null);n.n(o)().render(r().createElement(c,null),document.getElementById("app"))}};
