@@ -14,11 +14,11 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "paths": {
+            "*": ["./@mf-types/*"]
+        },
     },
     "include": ["src/**/*", "**/*.d.ts"],
-    "paths": {
-        "*": ["./src/*"]
-    },
     "exclude": ["node_modules"]
 }

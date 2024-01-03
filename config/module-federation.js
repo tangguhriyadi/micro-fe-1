@@ -1,5 +1,6 @@
 const deps = require('../package.json').dependencies;
 const { ModuleFederationPlugin } = require('webpack').container;
+const { FederatedTypesPlugin } = require('@module-federation/typescript');
 const { UniversalFederationPlugin } = require('@module-federation/node');
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
     name: 'app1',
     filename: 'remoteEntry.js',
     remotes: {
-    //   remote2: 'remote2@http://localhost:3002/client/remoteEntry.js',
+      app2: 'app2@http://localhost:3001/remoteEntry.js',
     },
     exposes: {
     //   './Content': './src/Content',
@@ -31,7 +32,7 @@ module.exports = {
       library: { type: 'commonjs-module' },
       isServer: true,
       remotes: {
-        // remote2: 'remote2@http://localhost:3002/server/remoteEntry.js',
+        app2: 'app2@http://localhost:3001/server/remoteEntry.js',
       },
       exposes: {
         // './Content': './src/Content',
