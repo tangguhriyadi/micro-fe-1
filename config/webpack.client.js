@@ -3,6 +3,8 @@ const { merge } = require('webpack-merge');
 const sharedWebpackConfig = require('./webpack.shared');
 const moduleFederationPlugin = require('./module-federation');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const FederatedTypesPlugin = require("@module-federation/typescript");
+
 
 /**
  * @type {import('webpack').Configuration}
@@ -17,6 +19,7 @@ const webpackConfig = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
     }),
+    new FederatedTypesPlugin()
   ],
 };
 
